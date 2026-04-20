@@ -1,0 +1,11 @@
+node_modules/
+.env
+config.json
+logs/
+*.log
+.DS_Store
+.vscode/
+*.jar
+*.bak
+#youTube plugins
+plugins/*.jar

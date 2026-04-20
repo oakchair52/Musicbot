@@ -1,0 +1,57 @@
+server:
+  port: 2333
+  address: 0.0.0.0  #öööö
+
+lavalink:
+  server:
+    password: "paskahomo"  
+    sources:
+      youtube: false  
+      soundcloud: true
+      bandcamp: true
+      twitch: true
+      vimeo: true
+      http: true
+      local: false
+    filters:
+      volume: true
+      equalizer: true
+      karaoke: true
+      timescale: true
+      tremolo: true
+      vibrato: true
+      distortion: true
+      rotation: true
+      channelMix: true
+      lowPass: true
+    bufferDurationMs: 4000
+    playerUpdateInterval: 50
+    youtubePlaylistLoadLimit: 6
+    youtubeSearchEnabled: true
+    nonAllocatingFrameBuffer: false
+    soundcloudSearchEnabled: true
+    ffmpeg-executable: "ffmpeg"
+    native-extractor: false
+
+  plugins:
+    - dependency: "dev.lavalink.youtube:youtube-plugin:1.18.0"
+      snapshot: false
+
+plugins:
+  youtube:
+    enabled: true
+    allowSearch: true
+    allowDirectVideoIds: true
+    allowDirectPlaylistIds: true
+    clients:
+      - MUSIC
+      - ANDROID_VR
+      - WEB
+      - WEBEMBEDDED
+      - TVHTML5EMBEDDED  # veikkoohomo
+koe:
+  highPacketPriority: false
+  udpQueueSize: 400
+  useNAS: false
+httpConfig:
+  userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
