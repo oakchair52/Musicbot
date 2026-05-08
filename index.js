@@ -104,8 +104,8 @@ client.once("ready", async () => {
                         description: "The radio station to play",
                         required: true,
                         choices: [
-                            { name: "Järviradio(eitoimi)", value: "jarviradio" },
-                            { name: "Sandels Radio(eitoimi)", value: "sandelsradio" },
+                            { name: "Järviradio", value: "jarviradio" },
+                            { name: "Sandels Radio", value: "sandelsradio" },
                             { name: "UpTempo", value: "uptempo" }
                         ]
                     }
