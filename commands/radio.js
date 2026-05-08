@@ -10,14 +10,14 @@ const { EmbedBuilder } = require("discord.js");
 const STATIONS = {
     jarviradio: {
         name: "Järviradio",
-        url: "http://stream.jarviradio.fi/radio/8000/stream",
+        url: "https://jarviradio.radiotaajuus.fi:9000/jr",
         emoji: "📻",
         color: "#1e90ff",
         thumbnail: "https://jarviradio.fi/player/img/jarviradio_player_logo.png",
     },
     sandelsradio: {
         name: "Sandels Radio",
-        url: "http://stream.sandelsradio.fi/radio/8000/stream",
+        url: "https://radiosandels.radiotaajuus.fi:9050/radio",
         emoji: "🎙️",
         color: "#ff6600",
         thumbnail: null,
